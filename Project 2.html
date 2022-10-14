@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<style type="text/css">
+		
+
+		#ball{
+			width: 100px;
+			background-color: red;
+			background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcShM61PZPNESPZ58Lhpg6QQGRXVDkkoylepGQ&usqp=CAU);
+			height: 100px;
+			background-size: cover;
+			animation-name: bounce;
+			position: relative;
+			animation-duration: 2s;
+			animation-iteration-count:infinite ;
+		}
+
+		@keyframes bounce{
+
+			0%{
+				top: 0px;
+			}
+
+			50%{
+				top: 100px;
+			}
+
+			to{
+				top: 0px;
+			}
+
+		}
+		
+	</style>
+	<style type="text/css">
+		#Hoop{
+			width: 700;
+			height: 700;
+			background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS3dfj6-YQdA_BR8wOnj9JOldjP1JxHBfFFcA&usqp=CAU);
+			display: inline-block;
+		
+		}
+	</style>
+	<title></title>
+</head>
+<body>
+<div id="ball"></div>
+<div id="Hoop"></div>
+</body>
+</html>
