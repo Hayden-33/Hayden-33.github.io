@@ -1,13 +1,42 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<style type="text/css">
+	
+	<title>Steph Head</title>
+<style type="text/css">
+	.Steph{
+		height: 100px;
+		width:	100px;
+		background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT7WJWd27wR4yjamrXh6KyQ58tv96744CuriQ&usqp=CAU);
+		background-size: contain;
+		background-repeat: no-repeat;
+		position: absolute;
 		
-}
-	</style>
-	<title></title>
+		
+
+
+	}
+</style>
+
 </head>
 <body>
-<div></div>
+<script type="text/javascript">
+	document.addEventListener("mousemove",
+		function soupThereItIs(input){
+		var Steph = document.createElement("div")
+		document.body.appendChild(Steph);
+		Steph.classList.add("Steph");
+		Steph.style.left = input.clientX -50+ "px";
+		Steph.style.top = input.clientY -50+ "px";
+		console.log(input);
+
+
+		})
+
+
+
+
+
+</script>
 </body>
 </html>
