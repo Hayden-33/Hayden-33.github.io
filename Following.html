@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<style type="text/css">
+		#box{
+			width: 200px;
+			height: 200px;
+			background-color: lightblue;			background-image: url(Rock.png);
+			background-size: cover;
+			background-position: center;
+			position: absolute;
+		}
+	</style>
+	<title></title>
+</head>
+<body>
+<div id="box"></div>
+<script type="text/javascript">
+	document.addEventListener("mousemove",function(event){
+	box.style.left= event.clientX+ "px"
+	box.style.top= event.clientY + "px"
+	})
+</script>
+</body>
+</html>
