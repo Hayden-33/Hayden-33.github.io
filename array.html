@@ -1,34 +1,34 @@
 <!DOCTYPE html>
 <html>
 <head>
+	
+	<title>Different foods</title>
 	<style type="text/css">
 		#box{
 			width: 400px;
 			height: 500px;
 			border: 1px solid black;
 			font-size: 50px;
+
 		}
+
 	</style>
-	<title></title>
 </head>
 <body>
 	<center>
-		<p>These are the best meals to eat...</p>
-	<div id="box"></div>
+		<p>Different foods you can eat ...</p>
+		<div id="box"></div></div></center>
+<script type="text/javascript">
+	var foods = ["Steak" , " Chicken", " Sushi", " Duck", " Eggs", " Lamb"]
 
-	</center>
-	<script type="text/javascript">
-		
-		var food =["Steak", "Chicken", "Lamb", "Burrito", "Fish", "Duck", "Risotto"]
-		
-		box.addEventListener("click", function(){
-			var randomNumber = Math.round(Math.random()*5)
-			box.style.backgroundImage"url(" + food[randomNumber] ")";
+	box.addEventListener("click", function(){
+		var randomNumber = Math.round(Math.random()*5);
+		box.style.backgroundImage = "url(" + foods[randomNumber] + ")"
+		box.innerText = foods[randomNumber];
+		console.log(randomNumber)
 
-		console.log(run)
-		})
-	
-	</script>
 
+	})
+</script>
 </body>
 </html>
