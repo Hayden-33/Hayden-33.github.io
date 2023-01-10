@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	
+	<title></title>
+</head>
+<body>
+
+  
+<script type="text/javascript">
+let canvas = document.getElementById("canvas");
+let ctx = canvas.getContext("2d");
+
+canvas.addEventListener("mousemove", changeColor);
+
+function changeColor(event) {
+  let x = event.clientX;
+  let y = event.clientY;
+
+  let red = x / window.innerWidth * 255;
+  let green = y / window.innerHeight * 255;
+  let blue = (x + y) / (window.innerWidth + window.innerHeight) * 255;
+
+  ctx.fillStyle = `rgb(${red}, ${green}, ${blue})`;
+  ctx.fillRect(0, 0, canvas.width, canvas.height);
+}
+</script>
+</body>
+</html>
