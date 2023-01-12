@@ -4,26 +4,25 @@
 	
 	<title></title>
 </head>
+<style type="text/css">
+  box{
+    background-color:rgb(100, 100, 100) ;
+    width: 500;
+    height: 500;
+    filter: hue-rotate(45deg);
+  }
+</style>
 <body>
-
+  <div id="box"></div>
+  
   
 <script type="text/javascript">
-let canvas = document.getElementById("canvas");
-let ctx = canvas.getContext("2d");
 
-canvas.addEventListener("mousemove", changeColor);
+christmas.addEventListener("mousemove", function(event){
+  christmas.style.filter = "hue-rotate("+ event.clientX"deg);"
 
-function changeColor(event) {
-  let x = event.clientX;
-  let y = event.clientY;
-
-  let red = x / window.innerWidth * 255;
-  let green = y / window.innerHeight * 255;
-  let blue = (x + y) / (window.innerWidth + window.innerHeight) * 255;
-
-  ctx.fillStyle = `rgb(${red}, ${green}, ${blue})`;
-  ctx.fillRect(0, 0, canvas.width, canvas.height);
-}
+  christmas.style.width = event.clientX + "px";
+})
 </script>
 </body>
 </html>
