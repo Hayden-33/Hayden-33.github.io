@@ -20,11 +20,14 @@
 		<div id="box"></div></div></center>
 <script type="text/javascript">
 	var foods = ["Steak" , " Chicken", " Sushi", " Duck", " Eggs", " Lamb"]
+		var images = ["url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTP_5NzbmcU0tGuV0LhWs3b4pdvE_3s9LZvBA&usqp=CAU)" , " url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR91bofVtGYYL7VMXwGGBeIRrIncaVkYWfuaw&usqp=CAU)", " url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ3MIglCTWv7h3czqUoteb4xccjFemvG8VLcA&usqp=CAU)", " url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSZQM0FoucTHkZ9R8azT-4_qMyvfrojhptiRA&usqp=CAU)", " url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTsIPBOPGSYrCFeuUWy1Hw9mtYbtsBYF_RB3Q&usqp=CAU)", " url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQDyvxWokqsM4Yf29mg9aWsx29tpvbrRiS2kQ&usqp=CAU)"]
+
 
 	box.addEventListener("click", function(){
 		var randomNumber = Math.round(Math.random()*5);
 		box.style.backgroundImage = "url(" + foods[randomNumber] + ")"
 		box.innerText = foods[randomNumber];
+		box.style.backgroundImage = images[randomNumber]
 		console.log(randomNumber)
 
 
