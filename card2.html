@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<body>
+	
+
+		
+
+
+<img id="myImage" src="Steven.png" width="500" height="500">
+
+<button onclick="changeImage()">Click to Change Image</button>
+<h1>Happy Valentines day window boy</h1>
+<script>
+function changeImage() {
+  var image = document.getElementById('myImage');
+  if (image.src.match("Steven")) {
+    image.src = "Heat.png";
+  } else {
+    image.src = "Steven.png";
+  }
+}
+</script>
+
+</body>
+</html>
