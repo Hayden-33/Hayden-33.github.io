@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+
+	<style>
+
+		#ring{
+        height: 800px;
+        width: 800px;
+        background-position: center;
+        background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS2IQjy7GsDOTNhlV5QCULLqpZv5Y_f9X1Mug&usqp=CAU);
+        background-repeat: no-repeat;
+		}
+		
+
+		#Tyson{
+			width:350px;
+			height:350px;
+			background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSkHOuArCdqVmE1fAk56YvzzMu8xE0v75EHig&usqp=CAU);
+			left:10px;
+			position:absolute;
+			background-repeat: no-repeat;
+		}
+	</style>
+</head>
+<body>
+
+	<div id="Tyson"></div>
+
+	<div id="ring"></div>
+
+	<script type="text/javascript">
+		Tyson.style.left = "0px";
+
+		 var x = parseInt(Tyson.style.left);
+
+		document.addEventListener("keydown", function(event){
+			console.log(x)
+			x = x+50;
+
+			Tyson.style.left = x +"px";
+
+		})
+
+
+	</script>
+
+</body>
+</html>
