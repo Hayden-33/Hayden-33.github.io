@@ -5,16 +5,32 @@
 
 	<style>
 
+		body{
+			margin:0px;
+		}
+
+		#paul{
+			transition: .5s;
+			width:350px;
+			height:350px;
+			background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSkHOuArCdqVmE1fAk56YvzzMu8xE0v75EHig&usqp=CAU);
+			left:10px;
+			position:absolute;
+			background-repeat: no-repeat;
+		}
+
 		#ring{
-        height: 800px;
-        width: 800px;
+        height: 1000px;
+        width: 100%;
         background-position: center;
+        background-size:cover;
         background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS2IQjy7GsDOTNhlV5QCULLqpZv5Y_f9X1Mug&usqp=CAU);
         background-repeat: no-repeat;
 		}
 		
 
-		#Tyson{
+		#tyson{
+			transition:.5s;
 			width:350px;
 			height:350px;
 			background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSkHOuArCdqVmE1fAk56YvzzMu8xE0v75EHig&usqp=CAU);
@@ -25,21 +41,44 @@
 	</style>
 </head>
 <body>
+	<div id="ring">
+	<div id="tyson"></div>
+	<div id="paul"></div>
 
-	<div id="Tyson"></div>
-
-	<div id="ring"></div>
+</div>
 
 	<script type="text/javascript">
-		Tyson.style.left = "0px";
 
-		 var x = parseInt(Tyson.style.left);
+		tyson.style.left = "0px";
+
+		 var x = parseInt(tyson.style.left);
 
 		document.addEventListener("keydown", function(event){
 			console.log(x)
+
+			if(event.keyCode == 39){
 			x = x+50;
 
-			Tyson.style.left = x +"px";
+				tyson.style.left= x +"px"
+			}
+
+			if(event.keyCode == 37){
+			x = x-50;
+
+				tyson.style.left= x +"px"
+			}
+			
+			
+			
+
+		// if(CLick.Arrow Left)
+		// 	tyson.style.left(x = x+50)
+
+		// if (Click.Arrow Up)
+		// 	tyson.style.left(x= x+50)
+		
+		// if(Click.Arrow Right)
+		// 	tyson.style.left(x= +50)
 
 		})
 
