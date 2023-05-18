@@ -23,22 +23,85 @@
 		height:100px;
 		display: inline-block;
 		font-size: 75px;
+		no margin: none;
 
 
 		}
 
 	
-	
-
-a{
-	text-decoration: none;
-	font-family: 'Playball', cursive;
-	color: white;
+body {
+  font-family: cursive;
+margin: 0px;
+padding: 0px;
+  border: 0px;
 }
 
-body{
-	margin: 0px;
+
+.sidenav {
+  height: 100%;
+  width: 200px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  padding-top: 20px;
 }
+
+
+.sidenav a, .dropdown-btn {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 20px;
+  font-family: cursive;
+  color: #818181;
+  display: block;
+  border: none;
+  background: none;
+  width: 100%;
+  text-align: left;
+  cursor: pointer;
+  outline: none;
+}
+
+
+.sidenav a:hover, .dropdown-btn:hover {
+  color: white;
+}
+
+
+.main {
+  margin-left: 200px; 
+  font-size: 20px; 
+  padding: 0px 10px;
+}
+
+.active {
+  background-color: green;
+  color: white;
+}
+
+
+.dropdown-container {
+  display: none;
+  background-color: #262626;
+  padding-left: 8px;
+}
+
+
+.fa-caret-down {
+  float: right;
+  padding-right: 8px;
+}
+
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+
+
+
 
 
 </style>
@@ -47,7 +110,52 @@ body{
 	
 <div id="menu">
 
+<div class="sidenav">
+  <a href="index.html">Home</a>
+  <a href="Journal.html">Journal</a>
+  <button class="dropdown-btn">Projects
+  	    <i class="fa fa-caret-down"></i>
+  	<div class="dropdown">
+  <div class="dropdown-content">
+  </button>
+  <div class="dropdown-container">
+    <a href="Project1.html">Project 1</a>
+    <a href="Project 2.html">Project 2</a>
+    <a href="project3.html">Project 3</a>
+    <a href="Following.html">Project 4</a>
+    <a href="card.html">Project 5</a>
+    <a href="array.html">Project 6</a>
+    <a href="color.html">Project 7</a>
+    <a href="card2.html">Project 8</a>
+    <a href="Car.html">Project 9</a>
+    <a href="thing.html">Project 10</a>
+  </div>
 
+  <script>
+
+var dropdown = document.getElementsByClassName("dropdown-btn");
+var i;
+
+for (i = 0; i < dropdown.length; i++) {
+  dropdown[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var dropdownContent = this.nextElementSibling;
+    if (dropdownContent.style.display === "block") {
+      dropdownContent.style.display = "none";
+    } else {
+      dropdownContent.style.display = "block";
+    }
+  });
+}
+</script>
+  
+</div>
+
+
+  
+</div>
+
+</div>
 <center>
 <a href="index.html">
 <div class="button">Home</div>
@@ -57,9 +165,7 @@ body{
 </a>
 
 
-<a href="Projects.html">
-<div class="button">Projects</div>
-</a>
+
 </center>
 
 
