@@ -1,0 +1,196 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>reveal.js</title>
+
+		<link rel="stylesheet" href="dist/reset.css">
+		<link rel="stylesheet" href="dist/reveal.css">
+		<link rel="stylesheet" href="dist/theme/black.css">
+
+		<!-- Theme used for syntax highlighted code -->
+		<link rel="stylesheet" href="plugin/highlight/monokai.css">
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+				<section>Through working out, sometimes I was unsure of which supplement I wanted to use, so I made this project
+
+				</section>
+				
+				<section>
+				<style type="text/css">
+	.button{
+		width:300px;
+		height:100px;
+		display: inline-block;
+		font-size: 75px;
+		background-color:blue;
+	}
+
+
+
+		#box{
+			width: 500px;
+			height: 500px;
+			border: 1px solid black;
+			font-size: 50px;
+			background-repeat: no-repeat;
+			background-size: cover;
+			text-align:center;
+			background-position: center;	
+
+		}
+
+
+
+
+
+</style>
+	
+	
+	<title></title>
+<style type="text/css">
+	.button{
+		width:300px;
+		height:100px;
+		display: inline-block;
+		font-size: 75px;
+		background-color:blue;
+	}
+
+</style>
+	
+	
+	<title></title>
+</head>
+<body>
+<center>
+	<a href="../preworkout.html">
+		<div class="button">Pre</div>
+	</a>
+<a href="../protein.html">
+	<div class="button">Protein</div>
+</a>
+<a href="../recovery.html">
+	<div class="button">Recovery</div>
+</a>
+
+</center>
+<div>
+
+
+
+				</section>
+				
+				<section>Before I had my final idea, I was originally going to do an array, one for each section, heres an example
+				
+				</section>
+				
+<section>
+				
+	
+	
+
+	<center>
+		<p>Different Preworkouts to use</p>
+		<div id="box"></div>
+
+	</center>
+
+		
+
+
+
+</section>
+
+
+<section>Then I relized I wanted something where I got to choose the product and it was not random, so I came up with my final project.
+					
+</section>
+<section>
+	<head>
+<style type="text/css">
+	.button{
+		width:300px;
+		height:100px;
+		display: inline-block;
+		font-size: 75px;
+		background-color:blue;
+	}
+
+</style>
+	
+	
+	<title></title>
+</head>
+<body>
+<center>
+	<a href="../preworkout.html">
+		<div class="button">Pre</div>
+	</a>
+<a href="../protein.html">
+	<div class="button">Protein</div>
+</a>
+<a href="../recovery.html">
+	<div class="button">Recovery</div>
+</a>
+
+</center>
+<div>
+
+
+
+</section>
+<section>Now when I need to order or use supplements I have a quick, organized system to help me!
+		
+	</section>
+				
+				
+			</div>
+		</div>
+
+
+		<script type="text/javascript">
+	var Pre = ["Gorilla mode" , "Godzilla", "Total war", "Leigon Pulse", "Kool aid", "Alpha lion"]
+		var images = ["https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTgfmk83fE95pF7iUXOiJ3jm9R47lrgXZfhPXp8BKuFjA&usqp=CAU&ec=48665698" , 
+			"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcThwQQOhBDsv8hWFyQ6tkHrVSeKsCY3ck9iaLlgoxn6Hw&usqp=CAU&ec=48665698", 
+			"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ69WXe8ocaulvyqWwNkGQR3nyku6as3rYJVqIPbOWA9A&usqp=CAU&ec=48665698", 
+			"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRbznSOLsoVDkQ0Pz9GIWJjZMDiVDZ8SkACeVmbik9lYg&usqp=CAU&ec=48665698", 
+			"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR_bygL2_5LZrxIhQOOB9svUQbop9La4gNO5915jaL7IQ&usqp=CAU&ec=48665698", 
+			"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRk1eTezizveZ0eGJJ7-YvtLw_3zf7ZtRJKaxyJVb1eJQ&usqp=CAU&ec=48665698"]
+
+
+	box.addEventListener("click", function(){
+		var randomNumber = Math.round(Math.random()*5);
+		box.style.backgroundImage = "url(" + images[randomNumber] + ")"
+		box.innerText = Pre[randomNumber];
+		box.style.backgroundImage = images[randomNumber]
+		console.log(randomNumber)
+
+
+	})
+
+</script>
+
+		<script src="dist/reveal.js"></script>
+		<script src="plugin/notes/notes.js"></script>
+		<script src="plugin/markdown/markdown.js"></script>
+		<script src="plugin/highlight/highlight.js"></script>
+		<script>
+			// More info about initialization & config:
+			// - https://revealjs.com/initialization/
+			// - https://revealjs.com/config/
+			Reveal.initialize({
+				hash: true,
+
+				// Learn about plugins: https://revealjs.com/plugins/
+				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ]
+			});
+		</script>
+	</body>
+
+	
+</html>
