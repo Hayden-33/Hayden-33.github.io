@@ -2,10 +2,28 @@
 <html>
 <head>
 	<style type="text/css">
+		#menu{
+	width: 100%;
+	height: 100%;
+	background-size: cover;
+	background-color: lightskyblue;
+	background-image: url(https://staticg.sportskeeda.com/editor/2022/07/14170-16584187496615-1920.jpg);
+	
+	}
+	
+	.button{
+		width:347px;
+		height:100px;
+		display: inline-block;
+		font-size: 75px;
+		no margin: none;
+
+	}
+
 	
 		#box{
-			width: 500px;
-			height: 500px;
+			width: 300px;
+			height: 300px;
 			border: 1px solid black;
 			font-size: 50px;
 			background-repeat: no-repeat;
@@ -27,10 +45,10 @@
 			"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT3qW6Ir6CSquGm1Cq3b11809a-XYWJuUXziA4Tmr4PEw&usqp=CAU&ec=48665698", 
 			]
 box.addEventListener("click", function(){
-		var randomNumber = Math.round(Math.random()*5);
+		 var randomNumber = Math.round(Math.random()*4);
 		box.style.backgroundImage = "url(" + images[randomNumber] + ")"
-		box.innerText = images[randomNumber];
-		box.style.backgroundImage = images[randomNumber]
+		// box.innerText = images[randomNumber];
+		box.style.backgroundImage = "url("+images[randomNumber]+")";
 		console.log(randomNumber)
 
 
@@ -38,6 +56,10 @@ box.addEventListener("click", function(){
 	</script>
 
 	<div id="menu"></div>
+
+<a href="tickets.html">Tickets
+<div class="button"></div>
+</a>
 
 </body>
 </html>
