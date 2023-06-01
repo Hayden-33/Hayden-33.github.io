@@ -2,43 +2,124 @@
 <html>
 <head>
 	<style type="text/css">
-		#menu{
+
+
+#menu{
 	width: 100%;
 	height: 100%;
-	background-size: cover;
-	background-color: lightskyblue;
-	background-image: url(https://staticg.sportskeeda.com/editor/2022/07/14170-16584187496615-1920.jpg);
 	
+	background-color: 
+	background-image: url();
 	}
-	
-	.button{
-		width:347px;
-		height:100px;
-		display: inline-block;
-		font-size: 75px;
-		no margin: none;
 
-	}
 
 	
 		#box{
-			width: 300px;
-			height: 300px;
+			width: 500px;
+			height: 450px;
 			border: 1px solid black;
 			font-size: 50px;
 			background-repeat: no-repeat;
 			background-size: cover;
 			text-align:center;
-			background-position: center;	
+			background-position: center;
+			position: relative;	
+			top: 200px;
+			bottom: 200px;
 
 		}
+
+.sidenav {
+  height: 100%;
+  width: 200px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  padding-top: 20px;
+}
+
+
+.sidenav a, .dropdown-btn {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 20px;
+  color: #818181;
+  display: block;
+  border: none;
+  background: none;
+  width: 100%;
+  text-align: left;
+  cursor: pointer;
+  outline: none;
+}
+
+
+.sidenav a:hover, .dropdown-btn:hover {
+  color: #f1f1f1;
+}
+
+
+.main {
+  margin-left: 200px; 
+  font-size: 20px; 
+  padding: 0px 10px;
+}
+.active {
+  background-color: green;
+  color: white;
+}
+
+
+.dropdown-container {
+  display: none;
+  background-color: #262626;
+  padding-left: 8px;
+}
+
+
+.fa-caret-down {
+  float: right;
+  padding-right: 8px;
+}
+
+
 
 	</style>
 	<title></title>
 </head>
 <body>
-<div id="box"></div>
+
+	<div class="sidenav">
+  <a href="about.html">About</a>
+ <a href="shop.html">Shop</a>
+ <a href="cast.html">Cast</a>
+ <a href="impdet.html">Important Details</a>
+ <a href="planv.html">Plan Your Visit</a>
+  <button class="dropdown-btn">Tickets 
+    <i class="fa fa-caret-down"></i>
+  </button>
+  <div class="dropdown-container">
+    <a href="openingnight.html">Opening Night</a>
+    <a href="groupsales.html">Group Sales</a>
+ </div>
+   <a href="faq.html">FAQ</a>
+  
+</div>
+
+<div class="main"></div>
+	<center><div id="menu"></div></center>
+<center><div id="box"></div></center>
+
+
+
+
+
+
 	<script type="text/javascript">
+
 		var images = ["https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTR1OzARofDP4t5ukzjMebLDN-GjLTcclMMq2YSQmNh_w&usqp=CAU&ec=48665698",
 			"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQUNsoUkUm1CJMuJhifb2zWaWJiF8yo2Tugb8NQ9Eb7-w&usqp=CAU&ec=48665698", 
 			"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTjVh58wac_wzhidrZIGaU2NsekCgpZ6NA9AniJd7P6Yw&usqp=CAU&ec=48665698", 
@@ -53,13 +134,24 @@ box.addEventListener("click", function(){
 
 
 	})
+var dropdown = document.getElementsByClassName("dropdown-btn");
+var i;
+
+for (i = 0; i < dropdown.length; i++) {
+  dropdown[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var dropdownContent = this.nextElementSibling;
+    if (dropdownContent.style.display === "block") {
+      dropdownContent.style.display = "none";
+    } else {
+      dropdownContent.style.display = "block";
+    }
+  });
+}
+
 	</script>
 
-	<div id="menu"></div>
-
-<a href="tickets.html">Tickets
-<div class="button"></div>
-</a>
+	
 
 </body>
 </html>
