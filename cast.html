@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+.column {
+  float: left;
+  width: 33.3%;
+  margin-bottom: 16px;
+  padding: 0 8px;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  margin: 8px;
+}
+
+.about-section {
+  padding: 50px;
+  text-align: center;
+  background-color: darkred;
+  color: Black;
+}
+
+.container {
+  padding: 0 16px;
+}
+
+.container::after, .row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.title {
+  color: grey;
+}
+
+
+
+.button:hover {
+  background-color: #555;
+}
+
+@media screen and (max-width: 650px) {
+  .column {
+    width: 100%;
+    display: block;
+  }
+}
+</style>
+</head>
+<body>
+
+<div class="about-section">
+  <h1>The Cast</h1>
+  <p>This is the cast for the 2023 production of The Real Inspector Hound.</p>
+  
+</div>
+
+
+<div class="row">
+  <div class="column">
+    <div class="card">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTltOCY0JTZ15BbZwI9w-UlntpFIvIHO-ZH1FZonNVkLw&usqp=CAU&ec=48665698" alt="Mike Johnson" style="width:100%">
+      <div class="container">
+        <h2>Mike Johnson</h2>
+       <p class="title">Mike Johnson</p>
+        <p>Plays the role of Magnus.</p>
+     
+       
+      </div>
+    </div>
+  </div>
+
+  <div class="column">
+    <div class="card">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSnVKhLpmWZ3GkUMzbveFO_RL9VgbLXTWLDJFQeqaGgGw&usqp=CAU&ec=48665698" alt="Cynthia" style="width:100%">
+      <div class="container">
+        <h2>Rachel Wells</h2>
+        <p class="title">Rachel Wells</p>
+        <p>Plays the role of Cynthia</p>
+       
+      </div>
+    </div>
+  </div>
+  
+  <div class="column">
+    <div class="card">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTri5cSxR_XYsJ8mDLcUfnppuk5j7UP7n_uDXeo23-ENw&usqp=CAU&ec=48665698" alt="Joe" style="width:100%">
+      <div class="container">
+        <h2>Joe Smith</h2>
+        <p class="title">Joe Smith</p>
+        <p>Plays the role of Moon</p>
+        
+      </div>
+    </div>
+  </div>
+</div>
+
+  <div class="column">
+    <div class="card">
+      <img src="data:image/jpeg;base64,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" alt="Eric" style="width:100%">
+      <div class="container">
+        <h2>Eric Wilson</h2>
+        <p class="title">Eric Wilson</p>
+        <p>Plays the role of Birdboot</p>
+        
+      </div>
+    </div>
+  </div>
+</div>
+
+  <div class="column">
+    <div class="card">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ5PUYyeVrS-c3QR-oshJjcfw6MlqUK28jhX65aIo3kKA&usqp=CAU&ec=48665698=" alt="John" style="width:100%">
+      <div class="container">
+        <h2>Elis Davis</h2>
+        <p class="title">Elis Davis</p>
+        <p>Plays the role of Mrs. Drudge</p>
+       
+      </div>
+    </div>
+  </div>
+</div>
+
+  <div class="column">
+    <div class="card">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSSm4VGG5V-IYIyNhCD0kTZ734-Ftn4z4WsuSKtsFfHKw&usqp=CAU&ec=48665698" alt="Oliver" style="width:100%">
+      <div class="container">
+        <h2>Oliver Miller</h2>
+        <p class="title">Oliver Miller</p>
+        <p>Plays the role of Simon</p>
+       
+      </div>
+    </div>
+  </div>
+</div>
+
+  <div class="column">
+    <div class="card">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRwubrhBT0A7YGi6cgfTzN-Gmq-CRZ2WmhdBxR-IPh4Kw&usqp=CAU&ec=48665698" alt="Alice" style="width:100%">
+      <div class="container">
+        <h2>Alice Taylor</h2>
+        <p class="title">Alice Taylor</p>
+        <p>Plays the role of Felicity</p>
+       
+      </div>
+    </div>
+  </div>
+</div>
+
+ <div class="column">
+    <div class="card">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTsr4i2kQ5NsJ_dy3SyC0UFTqrbo3uR4Xc8Yv4ZI5XL8g&usqp=CAU&ec=48665698" alt="Ben" style="width:100%">
+      <div class="container">
+        <h2>Ben Williams</h2>
+        <p class="title">Ben Williams</p>
+        <p>Plays the role of The Real Inspector Hound</p>
+
+      </div>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
